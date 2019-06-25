@@ -1,4 +1,6 @@
 from calulation import *
+
+
 def mode():
     print("=" * 40)
     print("=\t id management system © Copyright \
@@ -17,12 +19,14 @@ def modeinput():
     print("\nphone: ", phone_num)
     print("\ncom: ", com_addr)
 
+
 """
 tt = ('sad', "sd")
 for x in tt:
     print(x)
 d = {1: 1, 2: 3}
 """
+
 
 # sum rang（1，100）
 def sum100():
@@ -38,40 +42,47 @@ def time3():
             print(i, end=" ")
     print('\n')
 
+
 def ninenine():
     for i in range(1, 10):
-        for j in range(1, i+1):
-            print(i,"*",j,"=",i * j,end=" ")
+        for j in range(1, i + 1):
+            print(i, "*", j, "=", i * j, end=" ")
         print()
+
+
 def utilzero_exit():
-    n=input(">>>")
-    while(n!='0'):
-        if int(n)<100 :
+    n = input(">>>")
+    while (n != '0'):
+        if int(n) < 100:
             print(n)
         n = input(">>>")
+
+
 def statictime():
     str = "hello world god always busy"
     resoult = {}
     for i in str:
-      resoult[i] = str.count(i)
+        resoult[i] = str.count(i)
     print(resoult)
 
 
-def calc(arg1,arg2,sym):
-    if sym=='+':
-        sum(arg1,arg2)
+def calc(arg1, arg2, sym):
+    if sym == '+':
+        sum(arg1, arg2)
     else:
-        if sym=='-':
-         dec(arg1,arg2)
+        if sym == '-':
+            dec(arg1, arg2)
         else:
-            if sym=='*':
-                mult(arg1,arg2)
+            if sym == '*':
+                mult(arg1, arg2)
             else:
-                if sym=='/':
-                    divs(arg1,arg2)
-                else: if sym==''
+                if sym == '/':
+                    divs(arg1, arg2)
+                else:
+                     if sym == 'e':
+                      exit()
 
 
 print(calc())
-#计算器 接受两个数
-#除数不为零
+# 计算器 接受两个数
+# 除数不为零
